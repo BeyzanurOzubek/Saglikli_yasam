@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Günlük Kalori İhtiyacı,  Günlük Kalori İhtiyacı Hesaplama">
+    <meta name="description" content="Günlük kalori ihtiyacızı hesaplayabilirsiniz.">
+    <meta name="author" content="Beyzanur ÖZÜBEK">
+    <title>Günlük Kalori İhtiyacı</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li><a href="body-mass-index.html">Vücut Kitle Endeksi (BMI)</a> </li>
+            <li><a href="basal-metabolic-rate.html">Bazal Metabolizma Hızı (BMR)</a></li>
+            <li><a href="ideal-weight.html">İdeal Kilo </a></li>
+            <li class="active"><a href="daily-calorie-need.html">Günlük Kalori İhtiyacı </a></li>
+            <li><a href="daily-water-need.html">Günlük Su İhtiyacı</a></li>
+        </ul>
+    </div>
+    <div>
+        <br><br>
+        <h1>Günlük Kalori İhtiyacı Hesaplama<br>  </h1>
+        <p>
+            İnsan vücudunun hayatta kalabilmesi ve günlük faaliyetlerini sürdürebilmesi için belirli miktarda kaloriye ihtiyacı vardır.
+            Kişinin boy, kilo gibi belirli özelliklerine göre değişen bu kalori miktarına günlük kalori ihtiyacı denir. Aşağıdaki 
+            hesaplama aracını kullanarak günlük kalori ihtiyacınızı hemen hesaplayabilirsiniz.
+        </p>
+        <form >
+            Boy (cm) <br>
+            <input class = "box" type="number" name="boy" id = "boy"><br><br>
+            Kilo (kg) <br>
+            <input class = "box" type="number" name="kilo" id = "kilo"><br><br>
+            Yaş <br>
+            <input class = "box" type="number" name="yas" id = "yas"><br><br>
+            Aktivite Seviyesi <br>
+            <select name="aktivite" id="aktivite">
+                <option value="hareketsiz">Hareketsiz</option>
+                <option value="dusuk">Düşük Düzeyde Hareketli</option>
+                <option value="orta">Orta Düzeyde Hareketli</option>
+                <option value="yuksek">Yüksek Düzeyde Hareketli</option>
+                <option value="cok-yuksek">Çok Yüksek Düzeyde Hareketli</option>
+            </select> <br><br>
+            Cinsiyetiniz
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="cinsiyet" id="kadin">
+                        <label for="kadin" >Kadın &nbsp;&nbsp;&nbsp;</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="cinsiyet" id="erkek" >
+                        <label for="erkek" id="erkek">Erkek</label>
+                    </td>
+                </tr>
+            </table><br><br>
+            <button class ="button" type="button" onclick="message();">Hesapla</button>
+        </form>
+        <br><br><br>
+        <h2>Günlük Kalori İhtiyacı Nasıl Hesaplanır?</h2>
+        <hr color="red">
+        <p>
+            Günlük kalori ihtiyacınızı bazal metabolizma hızınızı kullanarak hesaplayabilirsiniz. 
+            Tanım olarak BMR, dinlenme halindeki metabolizma hızıdır. Solunum, sindirim ve dolaşım gibi fonksiyonları sürdürmek 
+            için gereken minimum enerji seviyesidir. İlgili formül genellikle vücut ağırlığını korumak için ihtiyaç duyulan enerjiyi 
+            azaltarak kilo vermek için kullanılır.<br>
+            Bir insanın günlük kalori ihtiyacı hesaplama formülü ile bazal metabolizma hızınızı sayısal bir değere 
+            dönüştürebilirsiniz. Bu formül cinsiyetinize, yaşınıza ve vücut ölçülerinize göre belirlenir. Hareketsizken 
+            ne kadar kalori yaktığınızı söyleyen bu formül şu şekilde hesaplanır:
+            <ul>
+                <li>Bazal Metabolizma Hızı (BMR) (Kadın)  = [10*Kilogram(kg) + 6.25*Boy (cm) – 5*Yaş – 161] x AS</li>
+                <li>Bazal Metabolizma Hızı (BMR) (Erkek) = [10*Kilogram(kg) + 6.25*Boy (cm) – 5*Yaş + 5] x AS</li>
+            </ul><br>
+            <h3>Aktivite Seviyesi(AS):</h3>
+            <ul>
+                <li>Hareketsiz: 1.2</li>
+                <li>Düşük Düzeyde Hareketli: 1.375</li>
+                <li>Orta Düzeyde Hareketli: 1.55</li>
+                <li>Yüksek Düzeyde Hareketli: 1.725</li>
+                <li>Çok Yüksek Düzeyde Hareketli: 1.9</li>
+            </ul>
+        </p>
+        <p>
+            Yataktan kalkıp hareket etmeye başladığınızda daha fazla enerji harcayacağınız için bu rakamı ayarlamanız gerekecektir.
+        </p>
+        <img src="pictures/saglikli-yasam7.jpg">
+    </div>
+</body>
+</html>
+<script>
+    function message(){
+        var boy = document.getElementById("boy").value;
+        var kilo = document.getElementById("kilo").value;
+        var yas = document.getElementById("yas").value;
+        var aktivite = document.getElementById("aktivite").value;
+        var kadin = document.getElementById("kadin").checked;
+        
+        if(aktivite == "hareketsiz"){
+            if(kadin == true){
+                var hesap = (10*kilo+6.25*boy-5*yas-161)*1.2;
+            }else{
+                var hesap = (10*kilo+6.25*boy-5*yas+5)*1.2;
+            }
+        }else if(aktivite == "dusuk"){
+            if(kadin == true){
+                var hesap = (10*kilo+6.25*boy-5*yas-161)*1.375;
+            }else{
+                var hesap = (10*kilo+6.25*boy-5*yas+5)*1.375;
+            }
+        }else if(aktivite == "orta"){
+            if(kadin == true){
+                var hesap = (10*kilo+6.25*boy-5*yas-161)*1.55;
+            }else{
+                var hesap = (10*kilo+6.25*boy-5*yas+5)*1.55;
+            }
+        }else if(aktivite == "yuksek"){
+            if(kadin == true){
+                var hesap = (10*kilo+6.25*boy-5*yas-161)*1.725;
+            }else{
+                var hesap = (10*kilo+6.25*boy-5*yas+5)*1.725;
+            }
+        }else if(aktivite == "cok-yuksek"){
+            if(kadin == true){
+                var hesap = (10*kilo+6.25*boy-5*yas-161)*1.9;
+            }else{
+                var hesap = (10*kilo+6.25*boy-5*yas+5)*1.9;
+            }
+        }
+
+        hesap = hesap.toFixed(2);
+        alert("Günlük Kalori İhtiyacı : " + hesap);
+    }
+</script>

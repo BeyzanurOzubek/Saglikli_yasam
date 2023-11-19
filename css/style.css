@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-bar{
+    background: #e99472;
+    text-align: center;
+  }
+  
+  .menu-bar ul{
+    display: inline-flex ;
+    list-style: none;
+  }
+  
+  .menu-bar ul li{
+    width: 130x;
+    margin: 20px;
+    padding: 20px;
+  
+  }
+  
+  .menu-bar ul li a{
+    text-decoration: none;
+    color:#fff;
+  }
+  
+  .active, .menu-bar ul li:hover{
+  background: red;
+  border-radius: 15px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 400% ;
+  }
+  
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 150px;
+    margin-left: 150px;
+    font-size: 130% ;
+  }
+  
+  h3 {  
+    margin-top: 20px;
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+  
+  p {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    margin-right: 150px;
+    margin-left: 150px;
+    font-size: 130% ;
+    text-align: center;
+  }
+  
+  li {
+    margin-top: 15px;
+    margin-right: 150px;
+    margin-left: 150px;
+    font-size: 130% ;
+  }
+  
+  img {
+    width: 50%;
+    height: 50%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 350px;
+  }
+  
+  form {
+    margin-right: 150px;
+    margin-left: 150px;
+    text-align: center;
+    font-size: 130%;
+  }
+  
+  .box{
+    font-size: 100%;
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 40px;
+  }
+  
+  .button {
+    width: 425px;
+    padding: 10px;
+    border-radius: 20px;
+    height: 65px;
+    font-size: 90%;
+    background-color: rgb(229, 20, 20);
+    color : white;
+    
+  }
+  
+  select {
+    width: 425px;
+    border-radius: 20px;
+    font-size: 100%;
+    height: 65px;
+  }
+  
+  table{
+    margin-right: 150px;
+    margin-left: 350px;
+  }
+  
+  table, th, td{
+    border: 1px solid rgb(9, 8, 8);
+    border-collapse: collapse;
+  }
+  
+  th, td{
+    padding: 15px;
+    width: 185px;
+  }
+  

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Bazal Metabolizma Nedir,  Bazal Metabolizma Hızı Hesaplama">
+    <meta name="description" content="Bazal meatabolizma hızınızı hesaplayabilirsiniz.">
+    <meta name="author" content="Beyzanur ÖZÜBEK">
+    <title>Bazal Metabolizma Hızı (BMR)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li><a href="body-mass-index.html">Vücut Kitle Endeksi (BMI)</a> </li>
+            <li class="active"><a href="basal-metabolic-rate.html">Bazal Metabolizma Hızı (BMR)</a></li>
+            <li><a href="ideal-weight.html">İdeal Kilo </a></li>
+            <li><a href="daily-calorie-need.html">Günlük Kalori İhtiyacı </a></li>
+            <li><a href="daily-water-need.html">Günlük Su İhtiyacı</a></li>
+        </ul>
+    </div>
+    <div><br><br>
+        <h1>Bazal Metabolizma Hesaplama <br>(BMR)<br> </h1>
+        <p>
+            Bazal metabolizma, vücudun dinlenirken kullandığı minimum ya da temel enerji miktarıdır. Aşağıdaki hesaplama aracını 
+            kullanarak bazal metabolizma hızınızı hemen hesaplayabilirsiniz.
+        </p>
+        <form >
+            Boy (cm) <br>
+            <input class = "box" type="number" name="boy" id = "boy"><br><br>
+            Kilo (kg) <br>
+            <input class = "box" type="number" name="kilo" id = "kilo"><br><br>
+            Yaş <br>
+            <input class = "box" type="number" name="yas" id = "yas"><br><br>
+            Cinsiyetiniz
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="cinsiyet" id="kadin">
+                        <label for="kadin" >Kadın &nbsp;&nbsp;&nbsp;</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="cinsiyet" id="erkek" >
+                        <label for="erkek" id="erkek">Erkek</label>
+                    </td>
+                </tr>
+            </table><br><br>
+            <button class ="button" type="button" onclick="message();">Hesapla</button>
+        </form>
+        <br><br><br>
+        <h2>Bazal Metabolizma Nedir?</h2>
+        <hr color="red">
+        <p>
+            Bazal metabolizma, vücudun dinlenme halindeyken sadece hayatta kalmak için kullandığı minimum ya da temel enerji 
+            miktarını ifade eder. Uyanık olmak ya da en ufak aktivite için harcanan ek enerjiyi içermez. Vücut, dinlenme 
+            halindeyken bile enerji harcar; vücut içindeki kimyasal reaksiyonlar asla durmaz. Örneğin;
+            <ul>
+                <li> Nefes almak </li>
+                <li> Kan dolaşımı</li>
+                <li> Yiyeceklerin sindirimi </li>
+                <li> Hücre sentezi ve yıpranan hücrelerin onarımı </li>
+                <li> Hormon seviyelerinin düzenlenmesi </li>
+                <li> Vücut ısısının düzenlenmesi </li>
+            </ul>
+        </p>
+        <p>
+            gibi tüm faaliyetler her zaman devam eder. İşte bazal metabolizma vücudun bu yaşamsal faaliyetleri gerçekleştirmek 
+            için kullandığı enerjidir. Bazal metabolizma için kullanılan enerji, vücudun günlük alması gereken enerjinin neredeyse 
+            %60-80’ini oluşturur. Günlük almanız gereken kalori miktarının belirlenmesinde bazal metabolizma hızı oldukça önemlidir. 
+            Vücudun yaşamsal faaliyetleri sürdürebilmesi için gerekli olan enerjinin besinlerle mutlaka karşılanması gerekir. 
+            Aksi halde hücrelerin sağlıklı bir şekilde görevlerini yerine getirmesi zorlaşır ve bağışıklık sisteminden üreme 
+            sistemine, dolaşım sisteminden sinir sistemine kadar pek çok vücut sisteminde aksaklıklar meydana gelebilir.
+        </p>
+        <img src="pictures/saglikli-yasam3.jpg">
+        <h2>Bazal Metabolizma Hızı Nedir?</h2>
+        <hr color="red">
+        <p>
+            Vücudun solunum, dolaşım, elektron iletimi, yeni hücre sentezi gibi en temel işlevlerini yerine getirmesi için ihtiyaç 
+            duyduğu kalori miktarı bazal metabolizma hızını verir. Bu miktar ne kadar yüksekse bazal metabolizma hızı da o derece 
+            yüksek olur. Laboratuvar koşulları altında hiç hareket etmeksizin çok kısıtlayıcı koşullar altında ölçülür. 
+            Bazal metabolizma hızını etkileyen faktörler şunlardır:
+            <ul>
+                <li>
+                    Vücut kas oranı bazal metabolizma hızını artıran önemli bir faktördür. Vücut kas oranı yüksek olan bireyler 
+                    dinlenme sırasında bile daha yüksek kalori harcar.
+                </li>
+                <li>
+                    Bazal metabolizma hızını etkileyen bir diğer faktör cinsiyettir. Erkekler, aynı yaş ve kiloya sahip kadınlara 
+                    oranla daha az yağ ve daha yüksek kas kitlesine sahiptir. Bu durum erkeklerin bazal metabolizma hızının daha 
+                    yüksek olmasını sağlar.
+                </li>
+                <li>
+                    Bazal metabolizma hızında önemli etkisi olan bir diğer faktör de yaştır. Yaş ilerledikçe vücuttaki kas oranında 
+                    azalma gözlenir. Kas miktarı azaldıkça bazal metabolizma hızı yavaşlar ve günlük kalori tüketiminde azalma görülür.
+                </li>
+            </ul>
+        </p>
+        <h2>Bazal Metabolizma Hızı Nasıl Hesaplanır?</h2>
+        <hr color="red">
+        <p>
+            Bazal metabolizma hızı hesaplama, günlük harcamanız gereken kalori miktarına ulaşmanızı sağlar. Sağlıklı bir kiloya 
+            sahip olmak ya da formunuzu korumak istiyorsanız öncelikle bazal metabolizma hızınızın kaç kalori olduğunu bulmanız 
+            ve ardından da yaşam tarzına bağlı olarak günlük kalori ihtiyacınızı hesaplamanız gerekir.  Aldığınız kaloriden daha 
+            az ya da daha yüksek kalori tüketirseniz, kalori açığı ya da kalori fazlası sağlayabilir ve ideal kilonuza 
+            ulaşabilirsiniz. Bazal metabolizma hızını hesaplamak için en çok kullanılan yöntemlerden biri “Harris- Benedict” 
+            formülüdür. Harris Benedict formülüne göre;
+            <ul>
+                <li>Yetişkin bir kadının bazal metabolizma hızı= 447.593 + (9.247 x kg olarak ağırlık) + (3.098 x cm olarak boy) – (4.330 x yıl olarak yaş)</li>
+                <li>Yetişkin bir erkeğin bazal metabolizma hızı=  88.362 + (13.397 x ağırlık kg) + (4.799 x cm olarak boy) – (5.677 x yıl olarak yaş)</li>
+            </ul>
+        </p>
+        <img src="pictures/saglikli-yasam4.jpg">
+    </div>
+</body>
+</html>
+<script>
+    function message(){
+        var boy = document.getElementById("boy").value;
+        var kilo = document.getElementById("kilo").value;
+        var kadin = document.getElementById("kadin").checked;
+        var yas = document.getElementById("yas").value;
+
+        if(kadin == true){
+            var hesap = 447.593 + (9.247 * kilo) + (3.098 * boy) - (4.330 * yas); 
+        }else{
+            var hesap = 88.362 + (13.397 * kilo) + (4.799 * boy) - (5.677 * yas);
+        }
+        hesap = hesap.toFixed(2);
+        alert("BAZAL METABOLİZMA HIZI (BMR) : " + hesap + " Kalori/Gün." );
+    }
+</script>

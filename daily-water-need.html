@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Günlük Su İhtiyacı,  Günlük Kalori Su Hesaplama, Su İçmenin Yararları Nelerdir">
+    <meta name="description" content="Günlük su ihtiyacızı hesaplayabilirsiniz.">
+    <meta name="author" content="Beyzanur ÖZÜBEK">
+    <title>Günlük Su İhtiyacı</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li><a href="body-mass-index.html">Vücut Kitle Endeksi (BMI)</a> </li>
+            <li><a href="basal-metabolic-rate.html">Bazal Metabolizma Hızı (BMR)</a></li>
+            <li><a href="ideal-weight.html">İdeal Kilo </a></li>
+            <li><a href="daily-calorie-need.html">Günlük Kalori İhtiyacı </a></li>
+            <li class="active"><a href="daily-water-need.html">Günlük Su İhtiyacı</a></li>
+        </ul>
+    </div>
+    <div>
+        <br><br>
+        <h1>Günlük Su İhtiyacı Hesaplama<br></h1>
+        <p>
+            Vücudun yaşamsal faaliyetlerini devam ettirebilmesi için gerek duyduğu günlük su miktarına günlük su ihtiyacı denir. 
+            Aşağıdaki hesaplama aracını kullanarak günlük su ihtiyacınızı hemen hesaplayabilirsiniz.
+        </p>
+        <form >
+            Kilonuz (kg) <br>
+            <input class = "box" type="number" name="kilo" id = "kilo"><br><br>
+            <button class ="button" type="button" onclick="message();">Hesapla</button>
+        </form>
+        <br><br><br>
+        <h2>Su İçmenin Yararları Nelerdir?</h2>
+        <hr color="red">
+        <p>
+            Suyun önemi ve vücut için gerekliliği göz önünde bulundurulunca suya duyulan ihtiyacın, beslenme ihtiyaçlarımızdan 
+            çok daha fazla olduğunu görmek mümkün. İşte günlük düzenli su tüketiminin ön plana çıkan faydaları:
+            <ul>
+                <li>Metabolizmayı güçlendirmeye yardımcı olur</li>
+                <li>Sindirim sistemini destekler</li>
+                <li>Beyin fonksiyonlarına katkı sağlar</li>
+                <li>Enerjik hissetmenize yardımcı olur</li>
+                <li>Böbrek sağlığına katkıda bulunur</li>
+                <li>Sağlıklı bir hamilelik sürecini destekler</li>
+                <li>Cilt sağlığını olumlu etkiler</li>
+            </ul>
+        </p>
+        <h2>Günlük Su İhtiyacı Nasıl Hesaplanır?</h2>
+        <hr color="red">
+        <p>
+            Günlük su ihtiyacınızı belirlerken yaşınız, cinsiyetiniz, yaşam tarzınız ve sağlık durumunuz gibi pek çok faktör göz 
+            önünde bulundurulmalıdır. Ancak genel hesaplamalarda kilonuza göre günlük su ihtiyacınızı hesaplayabilirsiniz.
+            <br><br>
+            Günlük su ihtiyacı formülü şu şekildedir:
+            <br><br>
+            Günlük Su İhtiyacı (lt): Kilo (kg) x 0.033</p>
+        <img src="pictures/saglikli-yasam8.jpg">
+    </div>
+</body>
+</html>
+<script>
+    function message(){
+        var kilo = document.getElementById("kilo").value;
+        var hesap = kilo * 0.033;
+        hesap = hesap.toFixed(2);
+        alert("Günlük " + hesap + "L su içmelisiniz." );
+    }
+</script>

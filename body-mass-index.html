@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Vücut Kitle Endeksi Nedir, Vücut Kitle Endeksi Hesaplama, Vücut Kitle Endeksi Kaç Olmalı ">
+    <meta name="description" content="Vücut kitle endeksinizi hesaplayabilirsiniz.">
+    <meta name="author" content="Beyzanur ÖZÜBEK">
+    <title>Vücut Kitle Endeksi (BMI)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="body-mass-index.html">Vücut Kitle Endeksi (BMI)</a> </li>
+            <li><a href="basal-metabolic-rate.html">Bazal Metabolizma Hızı (BMR)</a></li>
+            <li><a href="ideal-weight.html">İdeal Kilo </a></li>
+            <li><a href="daily-calorie-need.html">Günlük Kalori İhtiyacı </a></li>
+            <li><a href="daily-water-need.html">Günlük Su İhtiyacı</a></li>
+        </ul>
+    </div>
+    <div><br><br>
+        <h1 >Vücut Kitle Endeksi Hesaplama <br>(bmi）</h1>
+        <p>
+            Vücut kitle endeksi(BMI), sahip olunan vücut yağ miktarını tahmin etmek için boy ve kilo ölçümlerinden elde edilen 
+            verilerin kullanıldığı tıbbi bir tarama aracıdır. Aşağıdaki hesaplama aracını kullanarak vücut kitle endeksinizi (VKİ) 
+            hemen hesaplayabilirsiniz.
+        </p>
+        <form>
+            Boyunuz (cm) <br>
+            <input class = "box" type="number" name="boy" id = "boy"><br><br>
+            Kilonuz (kg) <br>
+            <input class = "box" type="number" name="kilo" id = "kilo"><br><br>
+            <button class ="button" type="button" onclick="message();">Hesapla</button>
+        </form>
+
+        <br><br><br>
+        <h2>Vücut Kitle Endeksi (BMI) Nedir?</h2>
+        <hr color="red">
+        <p>
+            Vücut kitle endeksi (VKE), yetişkin bir bireyin kilosunun boyuna göre oranının ölçülmesi ile kişinin ideal kiloda olup 
+            olmadığını gösteren bir parametredir. İngilizcede "Body Mass Index (BMI)" şeklinde, Türkçe'de ise "Vücut Kitle 
+            Endeksi (VKE)" olarak ifade edilir. Kişilerin kolay ulaşabileceği ve cinsiyet, yaş, ırk ayrımı yapılmadan toplumdaki 
+            her bireye aynı şekilde uygulanabileceği için en yaygın olarak kullanılan boy-kilo parametresidir.
+        </p>
+        <p>Matematiksel olarak kişinin kilosunun boyunun karesine bölünmesi ile vücut kitle endeksi bulunur. Bu ölçümle kişinin 
+            olması gereken kilo aralığı tayin edilebilir. Diyet planı uygulamak için yeterli bir ölçüm olmasa da vücut kitle endeksi,
+            kişinin yaşına ve boyuna göre uygun bir kiloda olup olmadığına dair genel bir fikir verebilir.
+        </p>
+        <img src="pictures/saglikli-yasam.jpg">
+
+        <h2>Vücut Kitle Endeksi (VKİ) Nasıl Hesaplanır?</h2>
+        <hr color="red">
+        <p>
+            Vücut ağırlığı, boyun karesine bölünerek vücut kitle indeksi (bok kilo endeksi) kolaylıkla hesaplanabilir. Örneğin, 
+            70 kilo vücut ağırlığına sahip olan 1.70 boyunda bir bireyin BMI’si 24,2’dır. Yüksek vücut kitle indeksi, mutlaka bir 
+            sağlık sorunu yaşandığı anlamına gelmez. Vücut kitle indeksi hesaplanırken aşağıdaki faktörler hesaba katılmadığı için 
+            sonuçların doğruluğu etkilenebilir:
+            <ul>
+                <li>
+                    <b>Etnik Köken ve Genetik Faktörler:</b> Genetik faktörler ve etnik kökenin kas kütlesi üzerindeki etkisi, vücuttaki 
+                    yağ oranının BMI ile doğru hesaplanmamasına sebep olabilir.
+                </li>
+                <li>
+                    <b>Kas Kütlesi:</b> Sporcular, daha düşük yağ kütlesine sahip olma eğilimindedir. BMI, vücut ve boy birbirine 
+                    oranlanarak hesaplandığı için kilonun ne kadarının yağ ne kadar kas olabileceğini net şekilde ön göremez. 
+                    Sporcuların kilosu daha yüksek çıksa da vücudundaki yağ oranı düşük olabilir.
+                </li>
+                <li>
+                    <b>Vücut Tipi:</b> Vücut kitle indeksi, bel çevresini de hesaba katmaz. Armut ve elma vücut tipine sahip olan iki 
+                    farklı kişinin kilosu ve boyu ölçülerek aynı BMI oranına ulaşılabilir. Ancak, elma vücut tipindeki kişinin yağ 
+                    oranı, bel kısmında daha fazla olduğu için kardiyovasküler açıdan armut vücut tipindeki kişiye göre daha yüksek risk 
+                    taşıyabilir.
+                </li>
+            </ul>
+        </p>
+
+        <h2>Vücut Kitle Endeksi Kaç Olmalı ?</h2>
+        <hr color="red">
+        <p>
+            Dünya Sağlık Örgütü, BMI sonuçlarını 20 yaşın üzerindeki yetişkinler için 6 farklı şekilde sınıflandırır. Aşağıdaki 
+            Dünya Sağlık Örgütü’nün vücut kitle indeksi (vki) kaç olmalı sorusunun cevap sınıflandırmada kullandığı oranlar 
+            listelenmiştir:
+            <ul>
+                <li>
+                    18.5’in altında: Zayıf
+                </li>
+                <li>
+                    18.5 – 24.9 arasında: Normal Kilo
+                </li>
+                <li>
+                    25.0 – 29.9 arasında: Fazla Kilolu
+                </li>
+                <li>
+                    30.0 – 34.9 arasında: 1. Derece Obez
+                </li>
+                <li>
+                    35.0 – 39.9 arasında: 2. Derece Obez
+                </li>
+                <li>
+                    40.0 ve üzeri: Morbid Obez
+                </li>
+            </ul><br>
+            <p>
+                Eğer sonucunuz 24.9’un üzerinde çıktıysa kilonuzun olması gerekenden fazla olduğu anlamına gelir. Bu oran ne kadar 
+                yükselirse, olması gereken kilonuzun o kadar üzerine çıktığı sonucuna varabilirsiniz.
+            </p>
+            <img src="pictures/saglikli-yasam2.jpg">
+        </p>
+    </div>
+</body>
+</html>
+<script>
+    function message(){
+        var boy = document.getElementById("boy").value;
+        var kilo = document.getElementById("kilo").value;
+        var hesap = kilo/((boy/100)*(boy/100));
+        hesap = hesap.toFixed(1);
+
+        if(hesap < 18.5){
+            alert(hesap + "  Kilon zayif...");
+        }else if(hesap <= 24.9 && hesap >= 18.5){
+            alert(hesap + "  Kilon ideal...");
+        }else if(hesap <= 29.9 && hesap >= 25.0){
+            alert(hesap + "  Fazla kilolu...");
+        }else if(hesap <= 34.9 && hesap >= 30.0){
+            alert(hesap + "  1.Derece Obez...");
+        }else if(hesap <= 39.9 && hesap >= 35.0){
+            alert(hesap + "  2.Derece Obez...");
+        }else{
+            alert(hesap + "  Morbid Obez...");
+        }
+    }
+</script>

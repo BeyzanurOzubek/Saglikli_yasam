@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="İdeal Kilo Nedir,  İdeal Kilo Hesaplama">
+    <meta name="description" content="İdeal kilonuzu hesaplayabilirsiniz.">
+    <meta name="author" content="Beyzanur ÖZÜBEK">
+    <title>İdeal Kilo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li><a href="body-mass-index.html">Vücut Kitle Endeksi (BMI)</a> </li>
+            <li><a href="basal-metabolic-rate.html">Bazal Metabolizma Hızı (BMR)</a></li>
+            <li class="active" ><a href="ideal-weight.html">İdeal Kilo </a></li>
+            <li><a href="daily-calorie-need.html">Günlük Kalori İhtiyacı </a></li>
+            <li><a href="daily-water-need.html">Günlük Su İhtiyacı</a></li>
+        </ul>
+    </div>
+    <div><br><br>
+        <h1>İdeal Kilo Hesaplama <br></h1>
+        <p>
+            İdeal kilonuzu etkileyen birden fazla faktör vardır. Yaş, cinsiyet, kas kütlesi, genetik, etnik köken ve fiziksel 
+            aktivite seviyeleri bu faktörlerden yalnızca birkaçını oluşturur. Birçoğumuz bu sihirli rakamı tartıda ararken 
+            gerçek ideal bir ağırlığın olmadığı yönünde. Aşağıdaki hesaplama aracından ideal kilo oranınızı hesaplayabilirsiniz.
+        </p>
+        <form >
+            Boy (cm) <br>
+            <input class = "box" type="number" name="boy" id = "boy"><br><br>
+            Kilonuz (kg) <br>
+            <input class = "box" type="number" name="kilo" id = "kilo"><br><br>
+            Cinsiyetiniz
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="cinsiyet" id="kadin">
+                        <label for="kadin" >Kadın &nbsp;&nbsp;&nbsp;</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="cinsiyet" id="erkek" >
+                        <label for="erkek" id="erkek">Erkek</label>
+                    </td>
+                </tr>
+            </table><br><br>
+            <button class ="button" type="button" onclick="message();">Hesapla</button>
+        </form>
+        <br><br><br>
+        <h2>İdeal Kilo Nedir ?</h2>
+        <hr color="red">
+        <p>
+            İdeal kilo hesaplamak için boy ve kilo ölçülmelidir. Boyu metre, ağırlığı ise kilogram olarak ölçmek en doğru yöntemdir. 
+            Bununla birlikte BMI formülü inç cinsinden boy ve pound cinsinden ağırlık ölçümlerine de uyarlanmıştır. Bu ölçümler 
+            bir sağlık uzmanı tarafından veya evde ulaşabileceğiniz mezura, tartı gibi ölçüm aletleriyle hesaplanabilir.
+        </p>
+        <img src="pictures/saglikli-yasam5.jpg">
+        <h2>İdeal Kilo Nasıl Hesaplanır?</h2>
+        <hr color="red">
+        <p>
+            Sağlıklı bir kiloyu korumak bedensel ve zihinsel refah için oldukça önemli olmasının yanı sıra hastalık riskini 
+            azaltıyor olsa da bunun başarının tek ölçüsü olmadığını bilmek önemlidir. Ölçek dışı bazı etkilere, bel çevresi 
+            ölçümü gibi sağlık sonuçlarına ve kondisyon seviyelerinizdeki iyileşmelere dikkat etmek, sağlıklı alışkanlıkları 
+            güçlendirmeye yardımcı olabilir. Kilonuz ve sağlığınız söz konusu olduğunda öne çıkan şey metabolik durumunuzu hep 
+            en üst seviyede tutabilmektir.
+            <ul>
+                <li>Erkekler için hesaplama formülü şu şekildedir: 50 +2.3 x ((boy (cm) / 2.54) -60)</li>
+                <li>Kadınlar için hesaplama formülü şu şekildedir: 45.5+2.3 x ((boy (cm) / 2.54) -60)</li>
+            </ul>
+        </p>
+        <img src="pictures/saglikli-yasam6.jpg">
+    </div>
+</body>
+</html>
+<script>
+    function message(){
+        var boy = document.getElementById("boy").value;
+        var kilo = document.getElementById("kilo").value;
+        var kadin = document.getElementById("kadin").checked;
+        if(kadin == true){
+                var hesap = 45.5 + 2.3 *((boy/2.54)-60); 
+            }else{
+                var hesap = 50 + 2.3 *((boy/2.54)-60);
+            }
+        hesap = hesap.toFixed(2);
+        
+        if(hesap < kilo){
+            alert("İdeal Kilo : " + hesap + "\nKilon İdeal Kilonun Üzerinde !!!");
+        }else if(hesap > kilo){
+            alert("İdeal Kilo : " + hesap + "\nKilon İdeal Kilonun Altında !!!");
+        }
+    }
+</script>
